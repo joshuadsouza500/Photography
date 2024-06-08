@@ -1,5 +1,3 @@
-const { Poppins, Inria_Serif } = require("next/font/google");
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [

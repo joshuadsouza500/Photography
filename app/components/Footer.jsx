@@ -10,7 +10,7 @@ export const Footer = () => {
           <div>
             <ul
               tabIndex={0}
-              className="flex flex-col gap-1 text-white text-opacity-80 font-light md:font-medium "
+              className="flex flex-col gap-1 text-white text-opacity-80 font-light md:font-medium py-2"
             >
               <li>
                 <Link href="/">Home</Link>

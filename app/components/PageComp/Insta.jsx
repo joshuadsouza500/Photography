@@ -42,7 +42,7 @@ export default function Insta({ works }) {
           </MotionDiv>
         </MotionDiv>
 
-        <div className="grid grid-cols-4 lg:mx-10">
+        <div className="grid  grid-cols-4 lg:mx-10">
           {works.items.map((work) =>
             work.fields.id == "insta" ? (
               <div key={work.sys.id} className=" pb-4 md:px-1 ">
@@ -50,7 +50,7 @@ export default function Insta({ works }) {
                   (img) => img.sys.id === work.fields.img.sys.id
                 ) ? (
                   <MotionDiv
-                    className="relative h-[120px] sm:h-[200px] lg:h-[270px]  p-1 hover:scale-[.995] cursor-pointer  "
+                    className="relative h-[140px] sm:h-[200px] lg:h-[270px]  p-1 hover:scale-[.995] cursor-pointer  "
                     initial={{ filter: "blur(1px)" }}
                     whileInView={{ filter: "blur(0px)" }}
                     viewport={{ once: true }}
@@ -74,7 +74,10 @@ export default function Insta({ works }) {
                       gravity="center"
                       className=" object-cover px-1 rounded-sm  hover:opacity-20"
                     />
-                    <div className="h-full flex flex-col items-center justify-center gap-1">
+                    <Link
+                      href="https://www.instagram.com/"
+                      className="h-full flex flex-col items-center justify-center gap-1"
+                    >
                       <Image
                         alt="instagram icon"
                         src="/assets/instagram.svg"
@@ -84,7 +87,7 @@ export default function Insta({ works }) {
                       <h1 className=" text-xs md:text-lg text-center">
                         View on Instagram
                       </h1>
-                    </div>
+                    </Link>
                   </MotionDiv>
                 ) : null}
               </div>

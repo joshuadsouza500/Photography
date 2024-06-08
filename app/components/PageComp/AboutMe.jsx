@@ -25,7 +25,9 @@ export default async function AboutMe() {
           className="flex flex-col md:flex-row md:py-10 lg:pl-10 md:gap-6 "
         >
           <div className="md:hidden text-center py-4">
-            <h2 className="font-inria text-5xl pt-2">{about.fields.heading}</h2>
+            <h2 className="font-inria text-5xl pt-2 capitalize">
+              {about.fields.heading}
+            </h2>
             <h6 className="text-text pb-4">{about.fields.subheading}</h6>
           </div>
           {abouts.includes.Asset.map((img) => (
