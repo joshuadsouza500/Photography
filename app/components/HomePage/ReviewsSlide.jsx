@@ -21,7 +21,7 @@ export default async function ReviewsSlide() {
       <div className=" mx-4 sm:mx-10 lg:mx-20 w-[90%] mb-12 md:mb-12 ">
         <HeadingLine />
         <Motionh1
-          className="font-inria text-4xl md:text-5xl py-2"
+          className="font-Playfare text-4xl md:text-5xl py-2"
           variants={ReviewVariant}
           initial="hidden"
           whileInView="visible"

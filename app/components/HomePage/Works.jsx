@@ -20,7 +20,7 @@ export default async function Works() {
           <div className=" mx-auto w-[95%] mb-12 md:mb-12">
             <HeadingLine />
             <Motionh1
-              className="font-inria text-4xl md:text-5xl py-2"
+              className="font-Playfare text-4xl md:text-5xl py-2"
               variants={WorksVariant}
               initial="hidden"
               whileInView="visible"

@@ -8,7 +8,9 @@ export default async function ContactDetail() {
     <>
       <div className="pb-12 md:pb-2">
         <div className="lg:pt-6 pb-6 md:pb-2 lg:w-[80%] mx-auto  text-center">
-          <h1 className="font-inria text-6xl font-medium py-2">Get In Touch</h1>
+          <h1 className="font-Playfare text-6xl font-medium py-2">
+            Get In Touch
+          </h1>
           <p className="text-text text-sm w-[90%]  md:w-[80%] mx-auto">
             Fill out the form below and let&apos;s discuss how I can help bring
             your vision to life

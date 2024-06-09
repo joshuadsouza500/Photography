@@ -32,7 +32,7 @@ export default function Insta({ works }) {
           }}
         >
           <Motionh1
-            className="font-inria text-3xl md:text-5xl py-2"
+            className="font-Playfare text-3xl md:text-5xl py-2"
             variants={InstaVariant}
           >
             Follow me on Instagram
