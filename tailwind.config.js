@@ -11,6 +11,7 @@ module.exports = {
       fontFamily: {
         Poppins: ["Poppins"],
         inria: ["Inria_Serif"],
+        Playfare: ["Playfair Display"],
       },
       colors: {
         background1: "#070707",

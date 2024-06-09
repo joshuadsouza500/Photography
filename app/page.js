@@ -9,7 +9,7 @@ export const metadata = {
   description: "Photography portfolio website",
 };
 
-//  Font not working, callto action needs more contrast, try to make hero section fit the screen rn,
+//  Font not working, callto action needs more contrast, SEO
 //
 export default function Home() {
   return (

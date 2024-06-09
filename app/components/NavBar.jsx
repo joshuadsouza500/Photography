@@ -131,7 +131,7 @@ export default function NavBar() {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-lg dropdown-content -mr-10 mt-12 z-[1]  shadow bg-slate-100 rounded-box w-52 text-background2 "
+              className="menu menu-lg dropdown-content -mr-10 mt-12 z-[1]  shadow bg-slate-50 rounded-box w-52 text-background2 "
             >
               <li>
                 <Link href={"/"}>Home</Link>
@@ -147,10 +147,34 @@ export default function NavBar() {
               </li>
               <li className="pt-6 pb-2">
                 <ul className="grid grid-cols-2 gap-2 text-xs  cursor-pointer -mx-5 ">
-                  <li className="hover:scale-[1.05]">Instagram</li>
-                  <li className="hover:scale-[1.05]">Linkedin</li>
-                  <li className="hover:scale-[1.05]">Facebook</li>
-                  <li className="hover:scale-[1.05]">Youtube</li>
+                  <Link
+                    className="hover:scale-[1.05]"
+                    target="_blank"
+                    href="https://www.instagram.com/"
+                  >
+                    Instagram
+                  </Link>
+                  <Link
+                    className="hover:scale-[1.05]"
+                    target="_blank"
+                    href="https://www.instagram.com/"
+                  >
+                    Linkedin
+                  </Link>
+                  <Link
+                    className="hover:scale-[1.05]"
+                    target="_blank"
+                    href="https://www.facebook.com/"
+                  >
+                    Facebook
+                  </Link>
+                  <Link
+                    className="hover:scale-[1.05]"
+                    target="_blank"
+                    href="https://www.youtube.com/"
+                  >
+                    Youtube
+                  </Link>
                 </ul>
               </li>
             </ul>

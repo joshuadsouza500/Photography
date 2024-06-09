@@ -40,14 +40,14 @@ export default async function Hero() {
             }}
           >
             <Motionh1
-              className="font-inria text-2xl text-text opacity-95 bg-[#0c0c0c] w-24  text-center rounded-md border border-[#3e3e3e5b]"
+              className="font-Playfare text-2xl text-text opacity-95 bg-[#0c0c0c] w-24  text-center rounded-md border border-[#3e3e3e5b]"
               variants={HeroVariant}
               viewport={{ once: true }}
             >
               Hello!
             </Motionh1>
             <Motionh1
-              className="text-5xl leading-[1.15]   lg:text-7xl font-inria text-balance mx-auto pt-6 md:pt-10 overflow-hidden inline-block"
+              className="text-5xl leading-[1.15]   lg:text-7xl font-Playfare text-balance mx-auto pt-6 md:pt-10 overflow-hidden inline-block"
               variants={HeroVariant}
               viewport={{ once: true }}
             >
@@ -85,7 +85,7 @@ export default async function Hero() {
                   alt="hero-image"
                   width={400}
                   height={200}
-                  className=" h-[420px] md:h-[540px] w-full mask-linear  mask-from-100 mask-to-30 "
+                  className=" h-[430px] md:h-[540px] w-full mask-linear  mask-from-100 mask-to-30 "
                 />
               ) : (
                 <div>Image not found</div>
