@@ -4,9 +4,11 @@ import { React, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
-///[Autoplay({delay: 3000})]//
+
 export default function SliderComponent({ reviews }) {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
+    Autoplay({ delay: 3000 }),
+  ]);
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -70,51 +72,22 @@ export default function SliderComponent({ reviews }) {
       </div>
       <div className="flex mt-2 text-text w-20 mx-auto gap-2 justify-center  ">
         <button
-          className="embla__prev   btn btn-circle  btn-outline btn-sm md:btn-md "
+          className="embla__prev   btn btn-circle  btn-outline btn-sm md:btn-md hover:bg-background1"
           onClick={scrollPrev}
+          style={{ color: "#a6a6a7" }}
         >
           ❮
         </button>
         <button
-          className="embla__next  btn btn-circle  btn-outline btn-sm md:btn-md"
+          className="embla__next  btn btn-circle  btn-outline btn-sm md:btn-md hover:bg-background1"
           onClick={scrollNext}
+          style={{
+            color: "#a6a6a7",
+          }}
         >
           ❯
         </button>
       </div>
     </div>
   );
-}
-
-{
-  /**
- <div className='embla__container '>
-        
-        {reviews.items.map((review)=>(
-
-        <div key={review.sys.id} className='text-white grid grid-rows-2 md:grid-cols-6 gap-4  md:pt-4 pb-3 bg-background1 mx-6 embla__slide h-60 sm:h-56 lg:h-[270px] rounded-lg shadow-md '> 
-
-            { reviews.includes.Asset.map((img) => img.sys.id === review.fields.img.sys.id) ? (
-                <div className='relative col-span-2  sm:h-48 lg:h-60 lg:w-[210px] mx-auto  sm:w-40 ' >
-                <Image src={"https:" + reviews.includes.Asset.find((img) => img.sys.id === review.fields.img.sys.id).fields.file.url} alt='review-image' fill={true} sizes={{
-                  '1000px': '600px',
-                  '800px': '400px',
-                  '600px': '200px',
-                }}  className=' object-cover  rounded-md ' /> 
-                </div>
-               ) : null       
-            }
-
-         <div className='col-span-4 sm:pt-1 lg:pt-6'>
-            <span  style={{ fontSize:'20px',gap:'1px', color:'gold' }}> &#9733;&#9733;&#9733;&#9733;&#9733; </span>
-            <h4 className='text-xl pt-2 md:pt-3 pb-1 font-medium'>{review.fields.name}</h4>
-            <p className=' hidden lg:block  lg:text-base text-text text-balance overflow-hidden  '>{review.fields.para}</p>
-            <p className='lg:hidden text-xs sm:text-sm md:w-[95%]  text-text text-balance  '>{review.fields.smpara}</p>
-         </div>
-        
-       </div>
-     ))}
-       
-    </div>
-*/
 }

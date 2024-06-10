@@ -1,5 +1,6 @@
 import { getContact } from "@/lib/contentful";
 import Image from "next/image";
+import Link from "next/link";
 
 export default async function ContactDetail() {
   const contacts = await getContact();
@@ -40,10 +41,15 @@ export default async function ContactDetail() {
                   />
                 </div>
               ) : null}
-              <div className="pl-3 ">
-                <h6 className="text-lg font-medium">{contact.fields.name}</h6>
-                <h6 className="text-text ">{contact.fields.detail}</h6>
-              </div>
+              <Link
+                target="_blank"
+                href={`https://www.${contact.fields.link}.com/`}
+              >
+                <div className="pl-3 ">
+                  <h6 className="text-lg font-medium">{contact.fields.name}</h6>
+                  <h6 className="text-text ">{contact.fields.detail}</h6>
+                </div>
+              </Link>
             </div>
           ))}
         </div>

@@ -1,6 +1,7 @@
 import React from "react";
-import Image from "next/image";
+
 import Button from "../ui/Button";
+import Link from "next/link";
 
 export default function CallToAction() {
   return (
@@ -13,7 +14,9 @@ export default function CallToAction() {
                 Have a project in mind? Let&apos;s work together
               </h2>
               <div className="hover:scale-105">
-                <Button text="Contact me" />
+                <Link href="/contact">
+                  <Button text="Contact me" />
+                </Link>
               </div>
             </div>
           </div>

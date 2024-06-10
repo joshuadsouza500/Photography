@@ -38,7 +38,9 @@ export default function Insta({ works }) {
             Follow me on Instagram
           </Motionh1>
           <MotionDiv variants={InstaVariant}>
-            <Button text="Follow me" />
+            <Link target="_blank" href="https://www.instagram.com/">
+              <Button text="Follow me" />
+            </Link>
           </MotionDiv>
         </MotionDiv>
 
@@ -56,28 +58,30 @@ export default function Insta({ works }) {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.2 }}
                   >
-                    <CldImage
-                      src={
-                        "https://res.cloudinary.com/dudpo3nfs/image/fetch/https:" +
-                        works.includes.Asset.find(
-                          (img) => img.sys.id === work.fields.img.sys.id
-                        ).fields.file.url
-                      }
-                      deliveryType="fetch"
-                      alt="work-image"
-                      fill={true}
-                      sizes="(max-width: 768px) 100vw,
-               (max-width: 1200px) 80vw,
-               33vw"
-                      format="avif"
-                      crop="fill"
-                      gravity="center"
-                      className=" object-cover px-1 rounded-sm  hover:opacity-20"
-                    />
                     <Link
+                      target="_blank"
                       href="https://www.instagram.com/"
                       className="h-full flex flex-col items-center justify-center gap-1"
                     >
+                      <CldImage
+                        src={
+                          "https://res.cloudinary.com/dudpo3nfs/image/fetch/https:" +
+                          works.includes.Asset.find(
+                            (img) => img.sys.id === work.fields.img.sys.id
+                          ).fields.file.url
+                        }
+                        deliveryType="fetch"
+                        alt="work-image"
+                        fill={true}
+                        sizes="(max-width: 768px) 100vw,
+               (max-width: 1200px) 80vw,
+               33vw"
+                        format="avif"
+                        crop="fill"
+                        gravity="center"
+                        className=" object-cover px-1 rounded-sm  hover:opacity-20"
+                      />
+
                       <Image
                         alt="instagram icon"
                         src="/assets/instagram.svg"

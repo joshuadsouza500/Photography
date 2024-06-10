@@ -4,6 +4,7 @@ import Image from "next/image";
 import { delay, motion } from "framer-motion";
 import Button from "../ui/Button";
 import { MotionDiv, Motionh1 } from "../ui/Motion";
+import Link from "next/link";
 
 export default async function Hero() {
   const heros = await getHeroData();
@@ -60,9 +61,11 @@ export default async function Hero() {
               viewport={{ once: true }}
             >
               <button className="bg-slate-50  border border-text hover:scale-[1.01] rounded-3xl  px-4 md:px-5 py-3  hover:bg-[#0c0c0c] hover:text-white text-black  hover:border-white h-12">
-                View Gallery
+                <Link href="/gallery">View Gallery</Link>
               </button>
-              <Button text="Get in touch" />
+              <Link href="/contact">
+                <Button text="Get in touch" />
+              </Link>
             </MotionDiv>
           </MotionDiv>
 

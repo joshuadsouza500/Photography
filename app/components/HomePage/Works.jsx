@@ -4,6 +4,7 @@ import Button from "../ui/Button";
 import { getWorks } from "@/lib/contentful";
 import HeadingLine from "../ui/HeadingLine";
 import { MotionDiv, Motionh1, MotionP } from "../ui/Motion";
+import Link from "next/link";
 
 export default async function Works() {
   const works = await getWorks();
@@ -50,7 +51,7 @@ export default async function Works() {
             transition={{ duration: 1, delay: 1 }}
           >
             <button className="bg-[#0c0c0c]  border hover:border-[#3e3e3e] hover:scale-[1.01] rounded-3xl text-white px-4 md:px-5 py-3   border-slate-100 hover:bg-slate-100 hover:text-black md:h-12 w-48 ">
-              View entire gallery
+              <Link href="/gallery">View entire gallery</Link>
             </button>
           </MotionDiv>
         </header>
