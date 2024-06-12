@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap:https://photographybh.vercel.app/sitemap.xml
