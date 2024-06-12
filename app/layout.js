@@ -20,6 +20,10 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+      <meta
+        name="google-site-verification"
+        content="m3YkuK-Y4S-R_8lvq_jMpg2khDcoUQJKPe0TmD0r9ms"
+      />
       <link rel="icon" href="/cameraicon.png" />
       <body className="font-Poppins bg-background1 ">
         <Initial />

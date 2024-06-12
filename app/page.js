@@ -6,6 +6,9 @@ import Services from "./components/HomePage/Services";
 import Works from "./components/HomePage/Works";
 
 export const metadata = {
+  verification: {
+    google: "m3YkuK-Y4S-R_8lvq_jMpg2khDcoUQJKPe0TmD0r9ms",
+  },
   title: {
     template: "%s | John Doe Photography",
     default: "John Doe Photography",
@@ -24,7 +27,7 @@ export const metadata = {
   },
 };
 
-//  SEO, favicon, opengraph,
+//  opengraph,
 //
 export default function Home() {
   return (
