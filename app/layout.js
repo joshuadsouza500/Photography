@@ -20,7 +20,8 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body className="font-Poppins bg-background1">
+      <link rel="icon" href="/cameraicon.png" />
+      <body className="font-Poppins bg-background1 ">
         <Initial />
         <NavBar />
         {children}

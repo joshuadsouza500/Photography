@@ -19,6 +19,9 @@ module.exports = {
         background2: "#0D0D0D",
         text: "#a6a6a7",
       },
+      screens: {
+        xs: "325px",
+      },
     },
   },
 

@@ -37,7 +37,7 @@ export default async function ContactDetail() {
                     alt="contact-image"
                     width={28}
                     height={28}
-                    className=" "
+                    className=" sm"
                   />
                 </div>
               ) : null}

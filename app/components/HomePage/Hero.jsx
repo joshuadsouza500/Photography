@@ -48,7 +48,7 @@ export default async function Hero() {
               Hello!
             </Motionh1>
             <Motionh1
-              className="text-5xl leading-[1.15]   lg:text-7xl font-Playfare text-balance mx-auto pt-6 md:pt-10 overflow-hidden inline-block"
+              className="text-4xl xs:text-5xl leading-[1.15]   lg:text-7xl font-Playfare text-balance mx-auto pt-6 md:pt-10 overflow-hidden inline-block "
               variants={HeroVariant}
               viewport={{ once: true }}
             >
@@ -60,7 +60,7 @@ export default async function Hero() {
               variants={HeroVariant}
               viewport={{ once: true }}
             >
-              <button className="bg-slate-50  border border-text hover:scale-[1.01] rounded-3xl  px-4 md:px-5 py-3  hover:bg-[#0c0c0c] hover:text-white text-black  hover:border-white h-12">
+              <button className="bg-slate-50  border border-text hover:scale-[1.01] rounded-3xl  px-4 md:px-5 py-3  hover:bg-[#0c0c0c] hover:text-white text-black  hover:border-white h-12 text-sm xs:text-base">
                 <Link href="/gallery">View Gallery</Link>
               </button>
               <Link href="/contact">

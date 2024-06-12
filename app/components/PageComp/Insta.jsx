@@ -61,7 +61,7 @@ export default function Insta({ works }) {
                     <Link
                       target="_blank"
                       href="https://www.instagram.com/"
-                      className="h-full flex flex-col items-center justify-center gap-1"
+                      className="relative h-full flex flex-col items-center justify-center gap-1"
                     >
                       <CldImage
                         src={

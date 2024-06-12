@@ -43,7 +43,7 @@ export default function Loader() {
         className="fixed top-0 left-0 z-[9999] w-full h-full bg-black "
       >
         <div className="p-4 md:p-10 flex flex-col justify-between h-full ">
-          <span className="font-semibold text-white/40 ">Photographer</span>
+          <span className="font-semibold text-white/40 ">John Doe</span>
           <div className="flex  justify-center  ">
             <motion.svg
               xmlns="http://www.w3.org/2000/svg"
