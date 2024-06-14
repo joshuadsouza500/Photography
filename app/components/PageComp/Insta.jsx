@@ -14,7 +14,7 @@ export default function Insta({ works }) {
   };
 
   return (
-    <main className="py-10 lg:py-16 text-white bg-background2 ">
+    <main className="py-10 lg:py-16 xl:px-14 2xl:px-20 text-white bg-background2 ">
       <section className="lg:w-[85%] mx-4 lg:mx-auto ">
         <HeadingLine />
         <MotionDiv
@@ -44,7 +44,7 @@ export default function Insta({ works }) {
           </MotionDiv>
         </MotionDiv>
 
-        <div className="grid  grid-cols-4 lg:mx-10">
+        <div className="grid  grid-cols-4 lg:mx-10 2xl:mx-16">
           {works.items.map((work) =>
             work.fields.id == "insta" ? (
               <div key={work.sys.id} className=" pb-4 md:px-1 ">
@@ -52,7 +52,7 @@ export default function Insta({ works }) {
                   (img) => img.sys.id === work.fields.img.sys.id
                 ) ? (
                   <MotionDiv
-                    className="relative h-[140px] sm:h-[200px] lg:h-[270px]  p-1 hover:scale-[.995] cursor-pointer  "
+                    className="relative h-[140px] sm:h-[200px] lg:h-[270px] xl:h-[320px]  p-1 hover:scale-[.995] cursor-pointer  "
                     initial={{ filter: "blur(1px)" }}
                     whileInView={{ filter: "blur(0px)" }}
                     viewport={{ once: true }}

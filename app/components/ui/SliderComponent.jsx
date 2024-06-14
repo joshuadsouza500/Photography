@@ -19,7 +19,7 @@ export default function SliderComponent({ reviews }) {
   }, [emblaApi]);
 
   return (
-    <div className="embla mx-auto w-[95%] md:w-[80%] lg:w-[70%] text-white ">
+    <div className="embla mx-auto w-[95%] md:w-[80%] lg:w-[70%]  text-white ">
       <div className=" embla__viewport " ref={emblaRef}>
         <div className="embla__container ">
           {reviews.items.map((review) => (

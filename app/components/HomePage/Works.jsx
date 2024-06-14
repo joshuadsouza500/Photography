@@ -15,8 +15,8 @@ export default async function Works() {
   };
 
   return (
-    <main className=" py-16 text-white bg-background2">
-      <div className="mx-2 sm:mx-4 lg:mx-auto lg:w-[90%] ">
+    <main className=" py-16 text-white bg-background2 md:px-6 lg:px-16 xl:px-24 2xl:px-36 ">
+      <div className="mx-2 sm:mx-4 lg:mx-auto  ">
         <header className="flex flex-row items-center  md:mx-2">
           <div className=" mx-auto w-[95%] mb-12 md:mb-12">
             <HeadingLine />

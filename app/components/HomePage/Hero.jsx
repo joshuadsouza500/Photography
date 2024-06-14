@@ -19,10 +19,10 @@ export default async function Hero() {
   };
 
   return (
-    <main className=" bg-background1  w-full lg:px-10 pb-4 ">
+    <main className=" bg-background1   md:px-6  lg:px-16 xl:px-24 2xl:px-36  lg:h-dvh lg:pt-10 lg:-mb-12 ">
       {heros.items.map((hero) => (
         <div
-          className="text-white pb-2 md:py-1 flex flex-col-reverse md:flex-row  items-center md:items-start  gap-2 md:px-6 lg:px-16  "
+          className="text-white max-md:pb-2 md:py-1 flex flex-col-reverse md:flex-row  items-center  lg:items-center  gap-2   "
           key={hero.sys.id}
         >
           <MotionDiv
@@ -76,7 +76,7 @@ export default async function Hero() {
           {heros.includes.Asset.map((img) => (
             <MotionDiv
               key={hero.fields.heroimg.sys.id}
-              className="w-[90%] md:w-[95%] "
+              className="w-[90%] md:w-[95%] 2xl:w-[70%]"
               initial={{ filter: "blur(2px)" }}
               whileInView={{ filter: "blur(0px)" }}
               viewport={{ once: true }}
@@ -88,7 +88,7 @@ export default async function Hero() {
                   alt="hero-image"
                   width={400}
                   height={200}
-                  className=" h-[430px] md:h-[540px] w-full mask-linear  mask-from-100 mask-to-30 "
+                  className=" h-[430px] md:h-[540px] xl:h-[620px] w-full mask-linear  mask-from-100 mask-to-30 "
                 />
               ) : (
                 <div>Image not found</div>

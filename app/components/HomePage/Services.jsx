@@ -24,9 +24,9 @@ export default async function Services() {
   };
 
   return (
-    <section className="mx-2 lg:mx-12 py-16   text-white">
+    <section className="mx-2 md:px-6 lg:px-16 xl:px-24 2xl:px-36 py-16 xl:py-24   text-white">
       {" "}
-      <div className=" mx-auto w-[95%] mb-12 md:mb-12">
+      <div className=" mx-auto max-md:w-[95%] mb-12 md:mb-1">
         <HeadingLine />
         <Motionh1
           className="font-Playfare text-4xl md:text-5xl py-2"

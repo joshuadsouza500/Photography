@@ -18,7 +18,7 @@ export default async function AboutMe() {
 
   const abouts = await getAboutMe();
   return (
-    <main className="bg-background1 text-white mx-4 lg:mx-12 h-full pb-4">
+    <main className="bg-background1 text-white mx-4 lg:mx-12 h-full pb-4 lg:py-16 2xl:pb-16">
       {abouts.items.map((about) => (
         <div
           key={about.sys.id}

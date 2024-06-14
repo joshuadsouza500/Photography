@@ -41,14 +41,14 @@ export default function GalleryComp({ works, videos }) {
       </nav>
 
       {data == "photos" ? (
-        <div className="grid grid-cols-2 lg:grid-cols-3  gap-1 md:gap-4  mx-2 md:mx-5 lg:mx-14">
+        <div className="grid grid-cols-2 lg:grid-cols-3  gap-1 md:gap-4  mx-2 md:mx-5 max:lg:mx-14">
           {works.items.map((work) => (
             <div key={work.sys.id} className=" pb-4 px-1">
               {works.includes.Asset.map(
                 (img) => img.sys.id === work.fields.img.sys.id
               ) ? (
                 <MotionDiv
-                  className="relative h-[220px] md:h-[380px]  p-1 hover:scale-[.990]    "
+                  className="relative h-[220px] md:h-[380px] xl:h-[420px]  p-1 hover:scale-[.990]    "
                   initial={{ filter: "blur(2px)" }}
                   whileInView={{ filter: "blur(0px)" }}
                   viewport={{ once: true }}

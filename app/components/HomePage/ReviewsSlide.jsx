@@ -17,8 +17,8 @@ export default async function ReviewsSlide() {
 
   const reviews = await getReviews();
   return (
-    <main className=" py-16  bg-background2 text-white">
-      <div className=" mx-4 sm:mx-10 lg:mx-20 w-[90%] mb-12 md:mb-12 ">
+    <main className=" md:px-6 lg:px-16 xl:px-24 2xl:px-36  py-16   bg-background2 text-white">
+      <div className=" mx-4   max-md:w-[90%] mb-12 md:mb-12 ">
         <HeadingLine />
         <Motionh1
           className="font-Playfare text-4xl md:text-5xl py-2"
