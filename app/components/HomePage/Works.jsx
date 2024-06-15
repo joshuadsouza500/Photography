@@ -15,8 +15,8 @@ export default async function Works() {
   };
 
   return (
-    <main className=" py-16 text-white bg-background2 md:px-6 lg:px-16 xl:px-24 2xl:px-36 ">
-      <div className="mx-2 sm:mx-4 lg:mx-auto  ">
+    <main className=" py-16 text-white bg-background2 md:px-6 lg:px-20 ">
+      <div className="mx-2   lg:mx-auto  max-w-xxl 2xl:max-w-xxxl ">
         <header className="flex flex-row items-center  md:mx-2">
           <div className=" mx-auto w-[95%] mb-12 md:mb-12">
             <HeadingLine />
@@ -58,7 +58,7 @@ export default async function Works() {
         <Loadimg works={works} />
         <div className=" md:hidden flex justify-center py-4">
           <button className="bg-[#0c0c0c]  border hover:border-[#3e3e3e] hover:scale-[1.01] rounded-3xl text-white px-4 md:px-5 py-3   border-slate-100 hover:bg-slate-100 hover:text-black md:h-12 w-48 ">
-            View entire gallery
+            <Link href="/gallery">View entire gallery</Link>
           </button>
         </div>
       </div>

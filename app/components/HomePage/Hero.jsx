@@ -19,14 +19,14 @@ export default async function Hero() {
   };
 
   return (
-    <main className=" bg-background1   md:px-6  lg:px-16 xl:px-24 2xl:px-36  lg:h-dvh lg:pt-10 lg:-mb-12 ">
+    <main className=" bg-background1   md:px-6  lg:px-16   lg:h-dvh 2xl:pt-10 2xl:-mb-12 ">
       {heros.items.map((hero) => (
         <div
-          className="text-white max-md:pb-2 md:py-1 flex flex-col-reverse md:flex-row  items-center  lg:items-center  gap-2   "
+          className="text-white max-md:pb-2 md:py-1 flex flex-col-reverse md:flex-row  items-center  lg:items-start 2xl:items-center  gap-2 mx-auto max-w-xxxl  "
           key={hero.sys.id}
         >
           <MotionDiv
-            className="md:pl-2 w-[90%] md:w-auto pt-16  -mt-24 sm:-mt-20 md:mt-0 z-10"
+            className="md:pl-2 w-[90%] md:w-auto pt-16 max-2xl:pt-20  -mt-24 sm:-mt-20 md:mt-0 z-10"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}

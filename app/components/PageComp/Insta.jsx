@@ -14,8 +14,8 @@ export default function Insta({ works }) {
   };
 
   return (
-    <main className="py-10 lg:py-16 xl:px-14 2xl:px-20 text-white bg-background2 ">
-      <section className="lg:w-[85%] mx-4 lg:mx-auto ">
+    <main className="py-10 lg:py-16  text-white bg-background2 ">
+      <section className="lg:w-[85%] mx-4 lg:mx-auto max-w-xxl">
         <HeadingLine />
         <MotionDiv
           className=" flex justify-between  md:w-[95%] pb-10 md:pb-16  "

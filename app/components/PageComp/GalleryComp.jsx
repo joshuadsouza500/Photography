@@ -41,7 +41,7 @@ export default function GalleryComp({ works, videos }) {
       </nav>
 
       {data == "photos" ? (
-        <div className="grid grid-cols-2 lg:grid-cols-3  gap-1 md:gap-4  mx-2 md:mx-5 max:lg:mx-14">
+        <div className="grid grid-cols-2 lg:grid-cols-3  gap-1 md:gap-4  mx-2 md:mx-5 max:lg:mx-16">
           {works.items.map((work) => (
             <div key={work.sys.id} className=" pb-4 px-1">
               {works.includes.Asset.map(
