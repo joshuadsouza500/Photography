@@ -14,9 +14,9 @@ module.exports = {
         Playfare: ["Playfair Display"],
       },
       colors: {
-        background1: "#070707",
+        background1: "#070707", //#1a1919
         redbg: "#DE0000",
-        background2: "#0D0D0D",
+        background2: "#1a1919",
         text: "#a6a6a7",
       },
       screens: {

@@ -48,7 +48,7 @@ export default async function Hero() {
               Hello!
             </Motionh1>
             <Motionh1
-              className="text-4xl xs:text-5xl leading-[1.15]   lg:text-7xl font-Playfare text-balance mx-auto pt-6 md:pt-10 overflow-hidden inline-block "
+              className="text-4xl md:text-5xl leading-[1.15]   lg:text-7xl font-Playfare text-balance mx-auto pt-6 md:pt-10 overflow-hidden inline-block "
               variants={HeroVariant}
               viewport={{ once: true }}
             >

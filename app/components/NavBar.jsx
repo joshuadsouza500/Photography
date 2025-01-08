@@ -36,7 +36,7 @@ export default function NavBar() {
       {/*Big screen nav*/}
 
       <motion.nav
-        className="flex items-center justify-between gap-4 border-b   border-[#ffffff93] px-2 md:px-20 2xl:px-36 py-3  md:flex-row text-white   bg-[#e2e8f00a]  backdrop-blur-sm mx-auto // sticky top-0 z-20 inset-x-0"
+        className="flex items-center justify-between gap-4 border-b-[0.5]   border-[#ffffff93] px-2 md:px-20 2xl:px-36 py-3  md:flex-row text-white   bg-[#e2e8f00a]  backdrop-blur-sm mx-auto // sticky top-0 z-20 inset-x-0"
         variants={{
           hidden: {
             y: -100,
@@ -50,9 +50,6 @@ export default function NavBar() {
       >
         <Link href={"/"} className=" flex flex-col justify-center text-center">
           <h4 className="pl-2 font-semibold text-xl sm:text-2xl">John Doe</h4>
-          <span className=" text-xs opacity-90 text-redbg  -mt-1 ">
-            Photography
-          </span>
         </Link>
         <nav className="hidden md:block">
           <ul className="flex gap-2 md:gap-6">
