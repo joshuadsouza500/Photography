@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const Footer = () => {
   return (
-    <footer className="bg-[url('/assets/camera.jpg')] bg-cover bg-no-repeat bg-center ">
+    <footer className="bg-[url('/assets/camera.jpg')] bg-cover bg-no-repeat bg-center m-1 rounded-xl">
       <div className="inset-0 bg-background1 bg-opacity-80 h-full">
         <div className=" font-josefin pt-4 pb-1 flex justify-between px-6 md:px-16 lg:px-36 items-center ">
           <div>
