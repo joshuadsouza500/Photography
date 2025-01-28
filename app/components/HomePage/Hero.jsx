@@ -48,7 +48,7 @@ export default async function Hero() {
               Hello!
             </Motionh1>
             <Motionh1
-              className="md:hidden font-Playfare text-xl text-text opacity-95 bg-[#0c0c0c]  w-20 py-0.5 mx-auto  text-center rounded-full border-[0.5px] border-[#3e3e3e5b]"
+              className="md:hidden font-inria text-xl text-text opacity-95 bg-[#0c0c0c]  w-24 py-0.5 mx-auto  text-center rounded-full border-[0.5px] border-[#3e3e3e5b] tracking-wide"
               variants={HeroVariant}
               viewport={{ once: true }}
             >
@@ -63,11 +63,11 @@ export default async function Hero() {
             </Motionh1>
 
             <MotionDiv
-              className="flex gap-4 py-4 md:pt-6 cursor-pointer"
+              className="flex w-full items-center max-md:justify-center gap-4 py-4 md:pt-6 cursor-pointer"
               variants={HeroVariant}
               viewport={{ once: true }}
             >
-              <button className="bg-slate-50  border border-text hover:scale-[1.01] rounded-3xl  px-3 md:px-4 md:py-3 py-2  hover:bg-[#0c0c0c] hover:text-white text-black  hover:border-white h-12 text-sm xs:text-base">
+              <button className="bg-slate-50 shadow-inner  hover:scale-[1.01] rounded-3xl  px-5 md:px-4 md:py-3   hover:bg-[#0c0c0c] py-1 hover:text-white text-black  hover:border-white h-10 text-sm xs:text-base">
                 <Link href="/gallery">View Gallery</Link>
               </button>
               <Link href="/contact">

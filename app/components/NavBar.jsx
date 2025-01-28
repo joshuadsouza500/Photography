@@ -36,7 +36,7 @@ export default function NavBar() {
       {/*Big screen nav*/}
 
       <motion.nav
-        className="flex items-center justify-between gap-4 border-b-[0.5px]   border-[#ffffff93] px-2 md:px-20 2xl:px-36 py-3  md:flex-row text-white   bg-[#e2e8f00a]  backdrop-blur-sm mx-auto // sticky top-0 z-20 inset-x-0"
+        className="flex items-center justify-between gap-4 border-b-[0.5px]   border-[#ffffff59] px-2 md:px-20 2xl:px-36 py-2  md:flex-row text-white   bg-[#e2e8f00a]  backdrop-blur-sm mx-auto // sticky top-0 z-20 inset-x-0"
         variants={{
           hidden: {
             y: -100,
