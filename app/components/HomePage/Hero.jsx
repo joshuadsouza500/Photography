@@ -22,11 +22,11 @@ export default async function Hero() {
     <main className=" bg-background1   md:px-6  lg:px-16   lg:h-dvh 2xl:pt-10 2xl:-mb-12 ">
       {heros.items.map((hero) => (
         <div
-          className="text-white max-md:pb-2 md:py-1 flex flex-col-reverse md:flex-row  items-center  lg:items-start 2xl:items-center  gap-2 mx-auto max-w-xxxl  "
+          className="text-white max-md:pb-2 md:py-1 flex flex-col-reverse md:flex-row  items-center  lg:items-start 2xl:items-center  gap-2 mx-auto max-w-xxxl   "
           key={hero.sys.id}
         >
           <MotionDiv
-            className="md:pl-2 w-[90%] md:w-auto pt-16 max-2xl:pt-20  -mt-24 sm:-mt-20 md:mt-0 z-10"
+            className="md:pl-2 w-[90%] md:w-auto pt-16 max-2xl:pt-20  -mt-24 sm:-mt-20 md:mt-0 z-10 "
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -41,14 +41,21 @@ export default async function Hero() {
             }}
           >
             <Motionh1
-              className="font-Playfare text-2xl text-text opacity-95 bg-[#0c0c0c] w-24  text-center rounded-md border border-[#3e3e3e5b]"
+              className="hidden md:block font-Playfare text-2xl text-text opacity-95 bg-[#0c0c0c] w-24  text-center rounded-md border border-[#3e3e3e5b]"
               variants={HeroVariant}
               viewport={{ once: true }}
             >
               Hello!
             </Motionh1>
             <Motionh1
-              className="text-4xl md:text-5xl leading-[1.18]   lg:text-7xl font-Playfare text-balance mx-auto pt-4 md:pt-10 overflow-hidden inline-block "
+              className="md:hidden font-Playfare text-xl text-text opacity-95 bg-[#0c0c0c]  w-20 py-0.5 mx-auto  text-center rounded-full border-[0.5px] border-[#3e3e3e5b]"
+              variants={HeroVariant}
+              viewport={{ once: true }}
+            >
+              Hello!
+            </Motionh1>
+            <Motionh1
+              className=" max-md:text-center  text-3xl md:text-5xl leading-[1.4]  lg:leading-[1.25] lg:text-7xl font-Playfare text-balance mx-auto pt-2 md:pt-10 overflow-hidden inline-block "
               variants={HeroVariant}
               viewport={{ once: true }}
             >
